@@ -24,6 +24,7 @@ export default function ConnectPage() {
               </svg>
             </div>
           </Link>
+          
       </div>
       <p>To connect with cal (via email, phone, or any other supported message) you must first submit something you find interesting.</p>
       <p>As the number of requests to connect increases, so will the bar for what is interesting enough. I absolutely love talking to new people, but I have the same 24 hours in my day you do and can't spend it all talking to people about things I don't find interesting.</p>

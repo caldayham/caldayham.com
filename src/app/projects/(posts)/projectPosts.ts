@@ -49,4 +49,12 @@ export const projectPosts: Post[] = [
         date: '21-06-2023',
         tags: ['digital', 'web-dev'],
     },
+    {
+        path: 'black-widow-farm',
+        title: 'Black Widow Farm',
+        desc: 'I designed, built, and operated a black widow farm for the production of spider silk.',
+        img: '/imgs/projectImgs/black-widow-farm.png',
+        date: '21-06-2012',
+        tags: ['physical', 'farming'],
+    },
 ];
