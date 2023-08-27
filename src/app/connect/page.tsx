@@ -47,7 +47,7 @@ export default function ConnectPage() {
         <div>
           <h2>Government Voucher Purchase Link</h2>
           <Link
-            href={'https://buy.stripe.com/fZe4j18jhbPk4EgcMM'}
+            href={'https://buy.stripe.com/14k7vd5751aGeeQdQT'}
             className={styles.purchaseButton}
             target='_blank'
             rel="noopener noreferrer">
