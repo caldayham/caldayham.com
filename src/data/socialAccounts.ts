@@ -2,6 +2,12 @@ import { SocialAccount } from "@/models/socialAccount.model";
 
 const socialAccounts:SocialAccount[] = [
     {
+        id: 3,
+        platform: 'github',
+        iconPath: '/icons/github2.png',
+        link: 'https://github.com/caldayham',
+    },
+    {
         id: 0,
         platform: 'linkedin',
         iconPath: '/icons/linkedin.png',
@@ -20,22 +26,16 @@ const socialAccounts:SocialAccount[] = [
         link: 'https://account.venmo.com/u/caldayham',
     },
     {
-        id: 3,
-        platform: 'github',
-        iconPath: '/icons/github2.png',
-        link: 'https://github.com/caldayham',
-    },
-    {
-        id: 4,
-        platform: 'youtube',
-        iconPath: '/icons/youtube.png',
-        link: 'https://www.youtube.com/@caldayham',
-    },
-    {
         id: 5,
         platform: 'twitter',
         iconPath: '/icons/twitter.png',
         link: 'https://twitter.com/caldayham',
+    },
+    {
+        id: 7,
+        platform: 'stripe',
+        iconPath: '/icons/stripe.png',
+        link: 'https://buy.stripe.com/9AQ02L4318D8gmYaEI',
     },
     {
         id: 6,
@@ -44,10 +44,10 @@ const socialAccounts:SocialAccount[] = [
         link: 'https://www.instagram.com/caldayham/',
     },
     {
-        id: 7,
-        platform: 'snapchat',
-        iconPath: '/icons/snapchat.png',
-        link: 'https://www.snapchat.com/add/caldayham',
+        id: 4,
+        platform: 'youtube',
+        iconPath: '/icons/youtube.png',
+        link: 'https://www.youtube.com/@caldayham',
     },
 ]
 
