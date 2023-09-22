@@ -32,7 +32,7 @@ export default function Page() {
             </div>
 
             <div>
-                One thing that surprised me greatly during my research and readings was the massive scale of early computers relative to their output, expecially when compared to todays computers. 
+                One thing that surprised me greatly during my research and readings was the massive scale of early computers relative to their output, especially when compared to todays computers. 
                 This rapid compaction and explosion of computational power is a very interesting phenomenon that, if it continues, will definitely have a massive impact on the human species.
                 There is a large part of me that is worried about being left behind as the ability and agency of these machines increases, but I am also very excited to see what the future holds.
             </div>
