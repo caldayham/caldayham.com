@@ -8,16 +8,16 @@ const socialAccounts:SocialAccount[] = [
         link: 'https://github.com/caldayham',
     },
     {
+        id: 1,
+        platform: 'spotify',
+        iconPath: '/icons/spotify.png',
+        link: 'https://open.spotify.com/user/24zbjre8kpkb4zd5vh17nhgt6?si=HxbgYrVGTS2RzPqOrt27Eg',
+    },
+    {
         id: 0,
         platform: 'linkedin',
         iconPath: '/icons/linkedin.png',
         link: 'https://www.linkedin.com/in/caldayham/',
-    },
-    {
-        id: 1,
-        platform: 'facebook',
-        iconPath: '/icons/facebook.png',
-        link: 'https://www.facebook.com/caldayham',
     },
     {
         id: 2,

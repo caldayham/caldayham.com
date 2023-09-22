@@ -5,7 +5,6 @@ export default function ThoughtsLayout({ children } : { children: React.ReactNod
 
     return (
         <div>
-            <h1>Thoughts</h1>
             {children}
         </div>
     );

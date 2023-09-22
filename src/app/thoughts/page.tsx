@@ -7,7 +7,7 @@ export default function ThoughtsPage() {
   return (
     <>
       {thoughtPosts.map((post: any) => (
-        <Link href={`projects/${post.path}`} key={post.path} className='postWrapper'>
+        <Link href={`thoughts/${post.path}`} key={post.path} className='postWrapper'>
           <h2>{post.title}</h2>
           <p>{post.desc}</p>
         </Link>
