@@ -21,11 +21,13 @@ export default function Page() {
                 <p>-</p>
                 <p style={{lineHeight: '2rem', fontSize:"1.4rem", fontWeight:"600"}}>
                     Some of the main ethical concerns associated with digital equity or inclusion are the lack of access to technology, 
-                    the lack of access to the internet, and the lack of access to digital literacy. These concerns are especially prevalent 
-                    in rural areas and in low-income communities. The lack of access to technology and the internet can be due to the lack 
-                    of funding for schools and libraries. The lack of access to digital literacy can be due to the lack of funding for 
-                    training and education. These concerns are also prevalent in developing countries where the lack of access to technology 
-                    and the internet is due to the lack of infrastructure.
+                    low or no access to the internet, and disparities in digital literacy among different communities. These concerns are especially prevalent 
+                    in rural areas and in low-income communities. The lack of access to technology and internet can be due to the low 
+                    levels of funding for schools, libraries, and other enrichment sources that are often far more supplemented in affluent areas. 
+                    The lack of access to digital literacy can be due to limited 
+                    training and education and even limited access for those who seek out the necessary training and education.
+                     These concerns are also prevalent in developing countries where the lack of access to technology 
+                    and the internet can be due in part to low quality infrastructure.
                 </p>
             </div>
 
@@ -39,9 +41,9 @@ export default function Page() {
                 <p>-</p>
                 <p style={{lineHeight: '2rem', fontSize:"1.4rem", fontWeight:"600"}}>
                     Some key strategies that are necessary to help address issues of digital equity or inclusion are to provide funding
-                     for schools and libraries, to provide funding for training and education, and to provide funding for infrastructure. 
-                     These strategies are especially important in rural areas and in low-income communities. These strategies are also 
-                     important in developing countries where the lack of access to technology and the internet is due to the lack of infrastructure.
+                     for schools and libraries, possibly through taxation of higher income areas. This can be seen as an investment in the future generations who will benefit and contribute back to society.
+                     Additionally we should work to provide funding for training and education, and to provide funding for infrastructure in communities who are lagging. 
+                     These strategies are especially important in rural areas and in low-income communities.
                 </p>
             </div>
         </div >
