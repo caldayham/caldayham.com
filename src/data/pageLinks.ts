@@ -11,11 +11,6 @@ const pageLinks:Link[] = [
         title: 'thoughts',
         path: '/thoughts',
     },
-    {
-        id: 3,
-        title: 'lessons',
-        path: '/lessons',
-    },
 ]
 
 export default pageLinks;

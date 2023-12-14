@@ -1,5 +1,5 @@
 # caldayham.com
 
-The goal of this site is to guide people through their initial and ongoing interaction(s) with cal in a way that aligns their subsequent actions with the wants of cal day ham.
+The intended directive of this site is to give Cal an open place to share his actions and thoughts with the world, and to help him organize his life.
 
 thanks to https://heroicons.com/ for the jsx svg icons!
