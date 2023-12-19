@@ -8,30 +8,139 @@ export default function Page() {
             <h3>Cal Day Ham's Design Challenge phase 3 submission.</h3>
             <br />
             <br />
+
+            <h2>Introduction</h2>
+            <br />
             <p>
-                Outsourcing, a prevalent business strategy in today's globalized economy, involves hiring outside a business for contracted work rather than relying on in-house employees. This practice offers companies numerous benefits such as cost reduction, focusing on core business, resolving capacity issues, enhancing service quality, and accessing intellectual capital​​1. This activity is particularly attractive for companies in developed nations, which have been increasingly outsourcing parts of their business processes to developing countries like India and the Philippines for over two decades2​​. There are many major ethical concerns with this practice though, such as minimal or non-existant working condition standards, bribery with regulatory bodies, and human capital exploitation.
+                Outsourcing in today's global economy is a key strategy for businesses to reduce costs and enhance production efficiency. This approach, beneficial for companies and consumers in terms of lower prices, often overlooks the ethical and human aspects of labor. The drive to cut costs frequently results in compromised worker welfare, leading to inadequate wages and unsafe working conditions.
             </p>
             <br />
             <Image src="/images/outsourcing.jpg" alt="Outsourcing" width={500} height={300} />
             <br />
             <br />
             <p>
+                This reality highlights a significant gap in the regulatory landscape, where enforcement of labor laws is weak and companies often find loopholes. As a result, the need for a stronger approach to protect workers' rights in global outsourcing is evident. Our proposal aims to address this by increasing transparency in the outsourcing process, shifting company incentives towards better worker welfare. We propose a strategy that encourages businesses to view ethical labor practices as essential to their corporate strategy, driven by a market that values ethical consciousness.
+            </p>
+            <br />
+            <p>
+                Our goal is to create an environment where ethical practices are integral to business operations, encouraging companies to improve working conditions and wages. This shift aims to cultivate a culture of responsibility and respect for labor dignity. By promoting transparency and ethical practices, we seek to redefine outsourcing, turning it into a positive force that benefits workers and contributes to sustainable economic development.
+            </p>
+            <br />
 
-                The economic impact of outsourcing in developing countries is quite significant. For instance, in the Philippines, the outsourcing industry has become a major economic contributor, employing over 500,000 Filipinos in the business process outsourcing (BPO) sector2. This industry is a top foreign exchange earner, bringing substantial revenue to the country. Similarly, in India, cities like Bangalore are home to hundreds of thousands of tech workers employed by US companies, with major corporations like IBM employing a substantial portion of its workforce there. Outsourcing has positively impacted the unemployment rates and labor force development in these countries, addressing critical economic needs​​2.
+            <h2>Solution</h2>
+            <h4>Implementation: Concept Overview</h4>
+            <br />
+            <p>
+                Our non-profit organization, Ethical Sourcing Alliance (ESA), is founded with a vision to revolutionize the world of outsourcing. The core mission of ESA is to foster a global marketplace where ethical practices in labor and environmental management are not just encouraged but are the norm. ESA is anchored in values of transparency, accountability, and empowerment. We believe that by illuminating the realities of manufacturing processes and giving voice to workers, we can drive a significant shift in how global sourcing is approached.
             </p>
             <br />
             <p>
-                Ethically, outsourcing raises several dilemmas. The primary concern is the potential exploitation of workers in countries with lower labor costs, often leading to low wages, long working hours, and substandard working conditions. This situation can perpetuate a cycle of poverty and exploitation, undermining labor rights and simply not allowing people to capture the true value they are producing with their labor. Additionally, outsourcing can result in job losses in the home country, negatively impacting local communities and economies. Another significant issue is the environmental impact of relocating production to countries with lax environmental regulations, leading to pollution and environmental degradation​​​​​​3.
+                The ESA works on multiple fronts. Primarily, it serves as an educational resource, raising awareness about the importance of ethical sourcing. It also acts as a mediator and facilitator, bringing together various stakeholders, including businesses, consumers, and labor rights organizations, to create a dialogue and forge solutions. The ESA's ultimate goal is to create an ecosystem where ethical practices are rewarded and become a key factor in consumer decision-making.
+            </p>
+            <br />
+            <h4>The Web Application: "Ethical Insight"</h4>
+            <br />
+            <p>
+                "Ethical Insight" is our innovative web application designed to be the cornerstone of ESA's mission. This platform is a powerful tool that serves as a bridge between consumers, companies, and the realities of manufacturing. It is built on three key pillars:
+            </p>
+            <br />
+            <h4>Transparency Portal</h4>
+            <br />
+            <p>
+                Working Conditions Visibility: Users can access detailed reports about the working conditions in factories worldwide. This includes information on wages, working hours, safety measures, and worker rights compliance.
             </p>
             <br />
             <p>
-                To address these ethical challenges, companies are increasingly adopting responsible and sustainable outsourcing practices. This involves ensuring that outsourcing partners adhere to international labor standards, including fair wages and safe working conditions. Regular audits and monitoring of supplier practices are crucial for compliance. Engaging with local communities in the outsourcing countries to understand the impact of operations and contributing to community development is also vital. Furthermore, companies are encouraged to work with outsourcing partners who adhere to strict environmental standards, thereby promoting sustainable practices throughout the supply chain​​3. This final point is extremely important, it is common in the industry for many companies to turn a blind eye to shady regulation or inspection organizations who will simply give the required inspection approval for a bribe or other accommodation. To address this issue, setting up an independent third party who can randomly inspect facilities and severely punish those not only breaking the law for working conditions, but also soliciting bribes could be a great step to reducing this activity.
+                Environmental Impact Assessment: The portal provides insights into the environmental practices of manufacturing facilities, including waste management, carbon footprint, and resource utilization.
             </p>
             <br />
             <p>
-                While outsourcing presents economic benefits, it's essential for companies to consider and address the ethical, legal, and environmental implications to create a more sustainable and equitable global economy. Responsible outsourcing not only benefits the companies but also supports the well-being of workers and communities in the host countries, fostering a more balanced and fair global business environment.
+                Real-time Data and Audits: Leveraging technology, Ethical Insight provides up-to-date information through a mix of verified self-reporting by companies, third-party audits, and worker feedback.
             </p>
+            <br />
+            <h4>Brand Tracking</h4>
+            <br />
+            <p>
+                Favorites Dashboard: Consumers can customize their dashboard to follow brands they are interested in. This feature keeps them informed about the ethical practices of these brands.
+            </p>
+            <br />
+            <p>
+                Brand Ethics Score: Each brand is scored based on various ethical parameters. This transparent scoring system helps consumers make informed purchasing decisions.
+            </p>
+            <br />
+            <p>
+                Updates and Alerts: Users receive notifications about significant improvements or concerns related to their tracked brands, fostering an informed consumer base.
+            </p>
+            <br />
+            <h4>Community Engagement</h4>
+            <br />
+            <p>
+                Discussion Forums: Users can participate in forums to discuss ethical sourcing, share information, and learn from others’ experiences.
+            </p>
+            <br />
+            <p>
+                Advocacy Tools: The platform provides tools for users to advocate for ethical practices, including petitions, social media sharing options, and guides on how to engage with brands constructively.
+            </p>
+            <br />
+            <p>
+                Collaborative Initiatives: Ethical Insight encourages collaborative efforts, such as crowd-sourced monitoring and reporting, to increase its impact.
+            </p>
+            <br />
+            <h4>Key Implementation Steps</h4>
+            <br />
+            <p>
+                Development and Testing: Creating the "Ethical Insight" web application involves extensive software development, including designing a user-friendly interface, developing a secure database, and integrating real-time data processing capabilities. Beta testing with select user groups ensures the platform's functionality and effectiveness.
+            </p>
+            <br />
+            <p>
+                Data Collection and Verification: Establishing partnerships with data providers, NGOs, and labor organizations to gather and verify information about manufacturing practices. This step is crucial to ensure the accuracy and reliability of the information provided on the platform.
+            </p>
+            <br />
+            <p>
+                Outreach and Partnerships: Engaging with brands, manufacturers, and other stakeholders to participate in the initiative. This includes encouraging brands to voluntarily disclose information and participate in the scoring system.
+            </p>
+            <br />
+            <p>
+            Launch and Promotion: A strategic launch that includes media outreach, social media campaigns, and collaborations with influencers in the ethical consumption space. The goal is to reach a broad audience and establish "Ethical Insight" as a go-to resource for ethical sourcing information.
+            </p>
+            <br />
+            <p>
+            Feedback Loop and Continuous Improvement: Post-launch, it’s vital to establish a feedback mechanism to continuously improve the platform. This includes regular updates based on user feedback, emerging ethical sourcing trends, and technological advancements.
+            </p>
+            <br />
+            <p>
+            By implementing these steps, we aim to not only bring transparency to outsourcing practices but also to empower consumers and businesses to make ethical choices, thereby transforming the global marketplace into a more responsible and sustainable ecosystem.
+            </p>
+            <br />
 
+            <h2>Benefits</h2>
+            <p>
+
+            </p>
+            <br />
+
+            <h2>Implementation</h2>
+            <p>
+
+            </p>
+            <br />
+
+            <h2>Challenges</h2>
+            <p>
+
+            </p>
+            <br />
+
+            <h2>Video Pitch</h2>
+            <iframe
+                id="video-pitch"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/r59tGSS-48c"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+            ></iframe>
         </div>
     );
 };
