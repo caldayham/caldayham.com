@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function LandingPage() {
   return (
@@ -10,9 +11,14 @@ export default function LandingPage() {
           <h1 className={styles.introTitle}>Hello,&nbsp;<span className={styles.break}> </span>my name is Cal.</h1>
           <h1 className={styles.welcomeTitle}>Welcome! ヽ(‘ ∇‘ )ノ</h1>
           <div className={styles.openingText}>
-            <p>The primary directive of this site is to organize, centralize, and distribute, public information about myself, Cal!</p>
-            <p>My current idea to most simply group and display data is through posts. A post has a central topic and contains text, images, models, external links, and any other helpful data display methods I can integrate. I hope to get creative.</p>
-            <p>Posts are placed into one of three buckets, thoughts, projects, and lessons. My goal here is to simplify your search based on your goal.</p>
+            <p>The purpose of this site is to organize and distribute information about myself. Thanks for stopping by!</p>
+            <p>
+              Posts are both for personal reference and record keeping, and anyone who is curious about how I spend my hours. The two primary categories 
+              are <Link href={'/projects'} style={{ textDecoration: 'underline' }}>projects</Link> and <Link href={'/reflections'} style={{ textDecoration: 'underline' }}>reflections</Link>.
+            </p>
+            <p>
+              Projects encapsulate my creative endeavors, and reflections are attempts to summarize my understanding of various topics and experiences.
+            </p>
             <p>Finally there is a highly useful page, connect, which has an enjoyable way of contacting me to prevent spam and spur interesting interaction, and a list of all my public profiles.</p>
           </div>
         </div>
@@ -34,10 +40,10 @@ export default function LandingPage() {
         </div>
 
         <div className='lowerPageSection'>
-          <h1 className={styles.title}>About my Thoughts</h1>
+          <h1 className={styles.title}>About my reflections</h1>
           <p>Take every opinion and statement you read on this site for what it is, text describing the inclinations of a 22 year old male.</p>
           <p>In many areas, I am severely under-exposed, and I'm sure there are many amazing thinkers why have navigated the same or similar questions, possibly with greater clarity and fruitfulness.</p>
-          <p>My only goal in organizing and sharing my publicly acceptable thoughts is firstly for myself, to centralize them, and secondly to seed the inquisitions of curious minds who may not have asked themselves these questions.</p>
+          <p>My only goal in organizing and sharing my publicly acceptable reflections is firstly for myself, to centralize them, and secondly to seed the inquisitions of curious minds who may not have asked themselves these questions.</p>
         </div>
 
         <div className='lowerPageSection'>
@@ -49,7 +55,7 @@ export default function LandingPage() {
         <div className='lowerPageSection'>
           <h1 className={styles.title}>About my Lessons</h1>
           <p>I have learned a number of things during my exposure to various aspects of life, many of the lessons I plan to create are / will be taken directly from my folder of lessons I have been assembling for my future children.</p>
-          <p>Just as with my thoughts, take these lessons for what they are, likely non-perfect attempts by a 22 year old to share their understanding of the world.</p>
+          <p>Just as with my reflections, take these lessons for what they are, likely non-perfect attempts by a 22 year old to share their understanding of the world.</p>
         </div>
 
         <div className='lowerPageSection'>

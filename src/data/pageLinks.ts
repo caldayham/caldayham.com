@@ -8,8 +8,8 @@ const pageLinks:Link[] = [
     },
     {
         id: 2,
-        title: 'thoughts',
-        path: '/thoughts',
+        title: 'reflections',
+        path: '/reflections',
     },
 ]
 
