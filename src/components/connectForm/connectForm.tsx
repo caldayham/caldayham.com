@@ -1,7 +1,16 @@
 'use client';
 
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent, useState, FC } from 'react';
+import { useForm } from 'react-hook-form';
+import { sendEmail } from '@/lib/sendEmail';
 import styles from './connectForm.module.css';
+
+export type FormData = {
+  name: string;
+  email: string;
+  message: string;
+};
+
 
 
 export default function ConnectForm() {

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
-import Link from 'next/link'
+import SimpleLink from '@/components/SimpleLink'
 
 export default function LandingPage() {
   return (
@@ -13,13 +13,13 @@ export default function LandingPage() {
           <div className={styles.openingText}>
             <p>The purpose of this site is to organize and distribute information about myself. Thanks for stopping by!</p>
             <p>
-              Posts are both for personal reference and record keeping, and anyone who is curious about how I spend my hours. The two primary categories 
-              are <Link href={'/projects'} style={{ textDecoration: 'underline' }}>projects</Link> and <Link href={'/reflections'} style={{ textDecoration: 'underline' }}>reflections</Link>.
+              Posts are both for my personal reference and record keeping, and for anyone who is curious about how I think and spend my hours. The two primary categories 
+              are <SimpleLink>projects</SimpleLink> and <SimpleLink>reflections</SimpleLink>.
             </p>
             <p>
               Projects encapsulate my creative endeavors, and reflections are attempts to summarize my understanding of various topics and experiences.
             </p>
-            <p>Finally there is a highly useful page, connect, which has an enjoyable way of contacting me to prevent spam and spur interesting interaction, and a list of all my public profiles.</p>
+            <p>If you're interested in <SimpleLink href='connect'>connecting</SimpleLink> you can check out my public social accounts or spark up a conversation directly with me via the connect page form. </p>
           </div>
         </div>
         <div className={styles.imgItem}>
@@ -27,7 +27,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className={styles.mainContent}>
+      <div className={styles.mainContent}> 
 
         <div className='lowerPageSection'>
           <h1 className={styles.title}>About Cal</h1>
