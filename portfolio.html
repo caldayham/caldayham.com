@@ -21,7 +21,16 @@
         </nav>
 
         <section>
-            <h2>Featured Projects</h2>
+            <h2>
+                <select id="portfolio-filter" class="filter-dropdown">
+                    <option value="recent">Recent</option>
+                    <option value="popular">Popular</option>
+                    <option value="research">Research</option>
+                    <option value="design">Design</option>
+                    <option value="personal">Personal</option>
+                </select>
+                Projects
+            </h2>
             <div id="portfolio-projects">
                 <!-- Projects will be loaded dynamically from portfolio-data.json -->
             </div>

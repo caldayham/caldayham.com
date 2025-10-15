@@ -4,31 +4,46 @@
       "title": "Landscape Designer - System Pavers",
       "description": "Worked as a landscape designer for System Pavers, a multinational hardscape, decking, and turf installation company in California. Designed large-scale residential and commercial projects, sold multiple jobs exceeding $100,000. Used 3D design software to generate detailed models and communicate design concepts with clients, facilitating complex project visualization and approval.",
       "technologies": "3D Design Software, Hardscape Design, Client Relations, Large-Scale Project Management",
-      "link": "portfolio/system-pavers.html"
+      "link": "portfolio/system-pavers.html",
+      "date": "2024-01-01",
+      "tags": ["Design", "Personal"],
+      "views": 150
     },
     {
       "title": "Dubia Roach Farm - Commercial Scale Breeding Operation",
       "description": "Built and operated a 1.5m x 1.5m incubated breeding system housing approximately 40,000 Blaptica dubia cockroaches. Bred and sold roaches to pet stores as high-quality feeder insects for amphibians and reptiles. Designed custom environmental controls for temperature and humidity optimization.",
       "technologies": "Animal Husbandry, Environmental Control Systems, Small Business Operations",
-      "link": "portfolio/dubia-roach-farm.html"
+      "link": "portfolio/dubia-roach-farm.html",
+      "date": "2023-06-01",
+      "tags": ["Personal", "Design"],
+      "views": 200
     },
     {
       "title": "Rodent Anesthesia Masks",
       "description": "Designed and manufactured custom anesthesia masks for rodent research - both stereotaxic and non-stereotaxic deisgns. Over 2,400 mice and rats have been anesthetized using these masks across multiple labs. Featured key improvements over existing products in the market. Built a B2B business around warm email outreach to research labs, collecting thousands of qualified leads from published papers.",
       "technologies": "SolidWorks CAD, SLA & FDM 3D Printing, B2B Sales & Marketing",
-      "link": "portfolio/anesthesia-mask.html"
+      "link": "portfolio/anesthesia-mask.html",
+      "date": "2023-07-01",
+      "tags": ["Research", "Design"],
+      "views": 500
     },
     {
       "title": "Vertical Pole Evolution - Stroke Behavioral Test",
       "description": "Designed and built multiple iterations of behavioral testing equipment for neurological deficit assessment in rats post-ischemic stroke. Custom equipment enabled more accurate measurement of treatment effectiveness in the Department of Neurosurgery research lab.",
       "technologies": "SolidWorks, Custom Fabrication, Research Methodology",
-      "link": "portfolio/vertical-pole.html"
+      "link": "portfolio/vertical-pole.html",
+      "date": "2022-12-01",
+      "tags": ["Research", "Design"],
+      "views": 180
     },
     {
       "title": "Operational Strandbeest Sculpture",
       "description": "Medium-sized operational kinetic sculpture inspired by Theo Jansen's designs. Constructed from over 500 pieces of cold drawn and flat steel, assembled with over 2,000 welds. Fully rideable and functional.",
       "technologies": "Welding, Metal Fabrication, Kinetic Design",
-      "link": "portfolio/strandbeest.html"
+      "link": "portfolio/strandbeest.html",
+      "date": "2023-03-01",
+      "tags": ["Personal", "Design"],
+      "views": 350
     }
   ]
 }

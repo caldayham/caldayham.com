@@ -21,7 +21,17 @@
         </nav>
 
         <section>
-            <h2>Recent Posts</h2>
+            <h2>
+                <select id="blog-filter" class="filter-dropdown">
+                    <option value="recent">Recent</option>
+                    <option value="popular">Popular</option>
+                    <option value="personal-development">Personal Development</option>
+                    <option value="systems-thinking">Systems Thinking & Cognition</option>
+                    <option value="strategy-growth">Strategy & Growth Philosophy</option>
+                    <option value="complexity">Complexity & Philosophy</option>
+                </select>
+                Posts
+            </h2>
             <div id="blog-posts">
                 <!-- Blog posts will be loaded dynamically from blog-data.json -->
             </div>

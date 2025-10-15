@@ -164,9 +164,17 @@ Detail pages in subdirectories need relative paths:
      "title": "Your Project Name",
      "description": "Description of the project, what it does, impact, etc.",
      "technologies": "Tech1, Tech2, Tech3",
-     "link": "portfolio/project-filename.html"
+     "link": "portfolio/project-filename.html",
+     "date": "2024-01-15",
+     "tags": ["Research", "Design"],
+     "views": 0
    }
    ```
+
+   **Field Details:**
+   - `date`: Use ISO format YYYY-MM-DD for the project completion/start date
+   - `tags`: Choose from "Research", "Design", "Personal" (can have multiple)
+   - `views`: Start with 0 or estimated view count for sorting
 
 2. **Create detail page**: `portfolio/project-filename.html`
    - Use the detail page template below
@@ -184,14 +192,20 @@ Detail pages in subdirectories need relative paths:
    ```json
    {
      "title": "Your Blog Post Title",
-     "date": "2024",
-     "category": "Category Name",
+     "date": "2024-09-15",
      "excerpt": "Brief summary or excerpt of your post that appears on the listing page.",
-     "link": "blog/post-filename.html"
+     "link": "blog/post-filename.html",
+     "tags": ["Personal Development", "Systems Thinking & Cognition"],
+     "views": 0
    }
    ```
 
-2. **(Optional) Add topic**: If using a new category, add it to the `topics` array in `blog/0-blog-data.json`
+   **Field Details:**
+   - `date`: Use ISO format YYYY-MM-DD for the publication date
+   - `tags`: Array of category tags - should match topics from the topics array
+   - `views`: Start with 0 or estimated view count for sorting
+
+2. **(Optional) Add topic**: If using a new category tag, add it to the `topics` array in `blog/0-blog-data.json`
 
 3. **Create detail page**: `blog/post-filename.html`
    - Use the detail page template below
@@ -199,7 +213,7 @@ Detail pages in subdirectories need relative paths:
    - Convert markdown lists to `<ul>` and `<li>` tags
    - Wrap important sections in `.callout` divs
    - Use `<article>` tag for main content
-   - Add subtitle with date and category: `<p class="subtitle">2024 - Category</p>`
+   - Add subtitle with date: `<p class="subtitle">2024-09-15</p>`
 
 **The blog.html page will automatically display your new post!** No need to edit the HTML.
 
@@ -312,6 +326,27 @@ Always mark the current page with `.active` class:
    - `#blog-posts` - where blog post previews appear
    - `#blog-topics` - where topic links appear
 
+### Filtering System
+
+Both portfolio and blog pages feature dropdown filters that allow users to sort and filter content:
+
+**Portfolio Filters:**
+- **Recent**: Sorts projects by date (newest first)
+- **Popular**: Sorts projects by view count (highest first)
+- **Research**: Shows only projects tagged with "Research"
+- **Design**: Shows only projects tagged with "Design"
+- **Personal**: Shows only projects tagged with "Personal"
+
+**Blog Filters:**
+- **Recent**: Sorts posts by date (newest first)
+- **Popular**: Sorts posts by view count (highest first)
+- **Personal Development**: Shows only posts tagged with "Personal Development"
+- **Systems Thinking & Cognition**: Shows only posts with this category tag
+- **Strategy & Growth Philosophy**: Shows only posts with this category tag
+- **Complexity & Philosophy**: Shows only posts with this category tag
+
+The dropdown is styled to blend seamlessly into the heading, appearing as part of the text. When category filters are applied (Research, Design, etc.), items are still sorted by date within that filtered set.
+
 ### JSON Data Structure
 
 **portfolio/0-portfolio-data.json**:
@@ -322,11 +357,23 @@ Always mark the current page with `.active` class:
       "title": "Project Name",
       "description": "Full description...",
       "technologies": "Tech1, Tech2, Tech3",
-      "link": "portfolio/filename.html"
+      "link": "portfolio/filename.html",
+      "date": "2024-01-15",
+      "tags": ["Research", "Design", "Personal"],
+      "views": 150
     }
   ]
 }
 ```
+
+**Required Fields:**
+- `title`: Project name (string)
+- `description`: Full project description (string)
+- `technologies`: Comma-separated technologies used (string)
+- `link`: Relative path to detail page (string)
+- `date`: ISO date format YYYY-MM-DD (string) - used for "Recent" sorting
+- `tags`: Array of tags for filtering (array) - options: "Research", "Design", "Personal"
+- `views`: View count for popularity sorting (number)
 
 **blog/0-blog-data.json**:
 ```json
@@ -334,15 +381,24 @@ Always mark the current page with `.active` class:
   "posts": [
     {
       "title": "Post Title",
-      "date": "2024",
-      "category": "Category",
+      "date": "2024-09-15",
       "excerpt": "Brief summary...",
-      "link": "blog/filename.html"
+      "link": "blog/filename.html",
+      "tags": ["Personal Development", "Systems Thinking & Cognition"],
+      "views": 320
     }
   ],
-  "topics": ["Topic 1", "Topic 2", "Topic 3"]
+  "topics": ["Personal Development", "Systems Thinking & Cognition", "Strategy & Growth Philosophy"]
 }
 ```
+
+**Required Fields:**
+- `title`: Post title (string)
+- `date`: ISO date format YYYY-MM-DD (string) - used for "Recent" sorting
+- `excerpt`: Brief post summary (string)
+- `link`: Relative path to detail page (string)
+- `tags`: Array of category tags (array) - should match topics in the topics array
+- `views`: View count for popularity sorting (number)
 
 ## File Naming Conventions
 

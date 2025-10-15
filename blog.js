@@ -1,24 +1,38 @@
+// Store all posts globally
+let allPosts = [];
+
+// Function to dynamically resize dropdown to fit selected option
+function resizeDropdown(selectElement) {
+    const tempSpan = document.createElement('span');
+    tempSpan.style.visibility = 'hidden';
+    tempSpan.style.position = 'absolute';
+    tempSpan.style.fontSize = '1.25rem';
+    tempSpan.style.fontWeight = '600';
+    tempSpan.style.fontFamily = getComputedStyle(selectElement).fontFamily;
+    tempSpan.style.fontStyle = 'italic';
+    tempSpan.textContent = selectElement.options[selectElement.selectedIndex].text;
+    document.body.appendChild(tempSpan);
+    selectElement.style.width = (tempSpan.offsetWidth + 5) + 'px';
+    document.body.removeChild(tempSpan);
+}
+
 // Load and display blog posts from JSON data
 async function loadBlogPosts() {
     try {
         const response = await fetch('blog/0-blog-data.json');
         const data = await response.json();
+        allPosts = data.posts;
 
-        // Load blog posts
-        const postsContainer = document.getElementById('blog-posts');
+        const filterDropdown = document.getElementById('blog-filter');
 
-        data.posts.forEach(post => {
-            const postDiv = document.createElement('div');
-            postDiv.className = 'callout';
+        // Initial display with "recent" filter
+        displayPosts('recent');
+        resizeDropdown(filterDropdown);
 
-            postDiv.innerHTML = `
-                <h3>${post.title}</h3>
-                <p class="subtitle">${post.date} - ${post.category}</p>
-                <p>${post.excerpt}</p>
-                <p><a href="${post.link}">Read more →</a></p>
-            `;
-
-            postsContainer.appendChild(postDiv);
+        // Add event listener for filter dropdown
+        filterDropdown.addEventListener('change', (e) => {
+            displayPosts(e.target.value);
+            resizeDropdown(e.target);
         });
 
         // Load topics
@@ -34,6 +48,53 @@ async function loadBlogPosts() {
         // Fallback content if JSON fails to load
         document.getElementById('blog-posts').innerHTML =
             '<p>Unable to load blog posts. Please check back later.</p>';
+    }
+}
+
+// Display posts based on selected filter
+function displayPosts(filter) {
+    const container = document.getElementById('blog-posts');
+    container.innerHTML = ''; // Clear existing content
+
+    let filteredPosts = [...allPosts];
+
+    // Apply filter
+    if (filter === 'recent') {
+        filteredPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    } else if (filter === 'popular') {
+        filteredPosts.sort((a, b) => b.views - a.views);
+    } else if (filter === 'personal-development') {
+        filteredPosts = filteredPosts.filter(p => p.tags.includes('Personal Development'));
+        filteredPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    } else if (filter === 'systems-thinking') {
+        filteredPosts = filteredPosts.filter(p => p.tags.includes('Systems Thinking & Cognition'));
+        filteredPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    } else if (filter === 'strategy-growth') {
+        filteredPosts = filteredPosts.filter(p => p.tags.includes('Strategy & Growth Philosophy'));
+        filteredPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    } else if (filter === 'complexity') {
+        filteredPosts = filteredPosts.filter(p => p.tags.includes('Complexity & Philosophy'));
+        filteredPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    }
+
+    // Render filtered posts
+    filteredPosts.forEach(post => {
+        const postDiv = document.createElement('div');
+        postDiv.className = 'callout';
+
+        postDiv.innerHTML = `
+            <h3>${post.title}</h3>
+            <p class="subtitle">${post.date}</p>
+            <p>${post.excerpt}</p>
+            <p><a href="${post.link}">Read more →</a></p>
+        `;
+
+        container.appendChild(postDiv);
+    });
+
+    // Handle empty results
+    if (filteredPosts.length === 0) {
+        container.innerHTML = '<p>No posts found for this filter.</p>';
     }
 }
 

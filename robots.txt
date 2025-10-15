@@ -1,0 +1,41 @@
+# robots.txt for caldayham.com
+# Personal portfolio and blog website
+# All content is public and welcome to be indexed
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://caldayham.com/sitemap.xml
+
+# Crawl rate (optional, prevents aggressive crawling)
+Crawl-delay: 1
+
+# Common bot guidelines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block AI training scrapers (optional - uncomment if desired)
+# User-agent: GPTBot
+# Disallow: /
+#
+# User-agent: ChatGPT-User
+# Disallow: /
+#
+# User-agent: CCBot
+# Disallow: /
+#
+# User-agent: anthropic-ai
+# Disallow: /
+#
+# User-agent: Claude-Web
+# Disallow: /
+
+# Note: This site welcomes search engine indexing
+# Created: 2025-10-15
