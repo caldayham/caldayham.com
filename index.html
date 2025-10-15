@@ -10,10 +10,33 @@
 
 <body>
     <main>
+        <button id="settings-toggle" class="settings-icon" aria-label="Settings">
+            <img src="assets/setting-black.svg" alt="Settings" width="20" height="20" id="settings-icon-img">
+        </button>
+
+        <div id="settings-popup" class="settings-popup hidden">
+            <h3>Settings</h3>
+            <div class="setting-group">
+                <label>Theme</label>
+                <div class="setting-buttons">
+                    <button class="setting-btn active" data-theme="light">Light</button>
+                    <button class="setting-btn" data-theme="dark">Dark</button>
+                </div>
+            </div>
+            <div class="setting-group">
+                <label>Text Size</label>
+                <div class="setting-buttons">
+                    <button class="setting-btn" data-size="small">Small</button>
+                    <button class="setting-btn active" data-size="medium">Medium</button>
+                    <button class="setting-btn" data-size="large">Large</button>
+                </div>
+            </div>
+        </div>
+
         <header>
-            <img src="cal-holding-snapper.jpg" alt="Cal Day Ham" class="profile-photo">
+            <img src="assets/cal-holding-snapper.jpg" alt="Cal Day Ham" class="profile-photo">
             <h1>Cal Day Ham</h1>
-            <p class="subtitle">Designer & Builder</p>
+            <p class="subtitle">Designer</p>
         </header>
 
         <nav>
@@ -42,7 +65,7 @@
             </div>
             <div class="site-links">
                 <ul>
-                    <li><a href="portfolio.html"><strong>Portfolio</strong></a> → Work, research, ventures, & projects.
+                    <li><a href="portfolio.html"><strong>Portfolio</strong></a> → Work, research, & projects.
                     </li>
                     <li><a href="blog.html"><strong>Blog</strong></a> → Reflections, observations, & musings. </li>
                 </ul>
@@ -79,6 +102,7 @@
             </p>
         </section>
     </main>
+    <script src="settings.js"></script>
 </body>
 
 </html>
