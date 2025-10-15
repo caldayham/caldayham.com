@@ -92,14 +92,14 @@ header {
 }
 
 h1 {
-    font-size: 1.75rem;
+    font-size: 1.75em;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .subtitle {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 0.9em;
 }
 
 nav {
@@ -110,7 +110,7 @@ nav {
 
 nav a {
     margin-right: 1.5rem;
-    font-size: 0.85rem;
+    font-size: 0.85em;
 }
 
 nav a.active {
@@ -342,8 +342,8 @@ a:hover {
     }
 
     .profile-photo {
-        width: 100px;
-        height: 100px;
-        transform: scale(1.2);
+        width: 120px;
+        height: 120px;
+        transform: scale(1.3);
     }
 }
