@@ -1,12 +1,13 @@
 {
   "posts": [
     {
-      "title": "Lossy Compression Framework: Intelligence, Wisdom, and Emotional Understanding",
+      "title": "Lossy Compression Prediction Tradeoff Framework: Intelligence, Wisdom, and Emotional Understanding",
       "date": "2024-09-15",
-      "excerpt": "Human intelligence, wisdom, and emotional intelligence operate as different types of lossy compression algorithms optimized for different complexity domains. Raw intelligence excels at direct linear connections while wisdom and emotional intelligence excel at vector-matching patterns across highly complex, agential systems that resist perfect analytical decomposition.",
+      "excerpt": "Human intelligence, wisdom, and emotional intelligence operate as different types of lossy compression algorithms optimized for different complexity domains.",
       "link": "blog/lossy-compression.html",
       "tags": ["Systems Thinking & Cognition", "Complexity & Philosophy", "Personal Development"],
-      "views": 320
+      "views": 320,
+      "image": "https://via.placeholder.com/200x150"
     },
     {
       "title": "The Dual Nature of Growth: Stabilization and Expansion Phases",
@@ -14,7 +15,8 @@
       "excerpt": "In my experience, growth oscillates between two critical phases: stabilization & expansion - understanding markers for transitioning between, or scaling within these phases is the difference between stable growth and regression - or worse, implosion.",
       "link": "blog/growth-phases.html",
       "tags": ["Strategy & Growth Philosophy", "Personal Development"],
-      "views": 450
+      "views": 450,
+      "image": "https://via.placeholder.com/200x150"
     }
   ],
   "topics": [

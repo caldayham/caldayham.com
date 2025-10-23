@@ -80,13 +80,16 @@ function displayPosts(filter) {
     // Render filtered posts
     filteredPosts.forEach(post => {
         const postDiv = document.createElement('div');
-        postDiv.className = 'callout';
+        postDiv.className = 'callout callout-with-image';
 
         postDiv.innerHTML = `
-            <h3>${post.title}</h3>
-            <p class="subtitle">${post.date}</p>
-            <p>${post.excerpt}</p>
-            <p><a href="${post.link}">Read more →</a></p>
+            <div class="callout-content">
+                <h3>${post.title}</h3>
+                <p class="subtitle">${post.date}</p>
+                <p>${post.excerpt}</p>
+                <p><a href="${post.link}">Read more →</a></p>
+            </div>
+            <img src="${post.image}" alt="${post.title}" class="callout-image">
         `;
 
         container.appendChild(postDiv);

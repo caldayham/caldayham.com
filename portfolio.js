@@ -68,13 +68,16 @@ function displayProjects(filter) {
     // Render filtered projects
     filteredProjects.forEach(project => {
         const projectDiv = document.createElement('div');
-        projectDiv.className = 'callout';
+        projectDiv.className = 'callout callout-with-image';
 
         projectDiv.innerHTML = `
-            <h3>${project.title}</h3>
-            <p>${project.description}</p>
-            <p><strong>Technologies:</strong> ${project.technologies}</p>
-            <p><a href="${project.link}">View Details →</a></p>
+            <div class="callout-content">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <p><strong>Skills:</strong> ${project.skills}</p>
+                <p><a href="${project.link}">View Details →</a></p>
+            </div>
+            <img src="${project.image}" alt="${project.title}" class="callout-image">
         `;
 
         container.appendChild(projectDiv);
