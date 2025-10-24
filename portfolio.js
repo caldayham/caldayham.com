@@ -75,7 +75,6 @@ function displayProjects(filter) {
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
                 <p><strong>Skills:</strong> ${project.skills}</p>
-                <p><a href="${project.link}">View Details →</a></p>
             </div>
             <img src="${project.image}" alt="${project.title}" class="callout-image">
         `;
