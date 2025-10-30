@@ -56,7 +56,8 @@ function displayPosts(filter) {
     const container = document.getElementById('blog-posts');
     container.innerHTML = ''; // Clear existing content
 
-    let filteredPosts = [...allPosts];
+    // Filter out unpublished posts first
+    let filteredPosts = allPosts.filter(p => p.published === true);
 
     // Apply filter
     if (filter === 'recent') {
@@ -80,16 +81,37 @@ function displayPosts(filter) {
     // Render filtered posts
     filteredPosts.forEach(post => {
         const postDiv = document.createElement('div');
-        postDiv.className = 'callout callout-with-image';
+        postDiv.className = 'callout';
+
+        // Generate video thumbnail or fallback
+        let mediaElement = '';
+        if (post.video && post.video !== '') {
+            // Extract YouTube video ID
+            const videoId = post.video.includes('youtube.com') || post.video.includes('youtu.be')
+                ? post.video.split('v=')[1]?.split('&')[0] || post.video.split('/').pop()
+                : null;
+
+            if (videoId) {
+                mediaElement = `<img src="https://img.youtube.com/vi/${videoId}/mqdefault.jpg" alt="${post.title}" style="width: 200px; height: 150px; object-fit: cover; border-radius: var(--border-radius); pointer-events: none; flex-shrink: 0;">`;
+            } else {
+                mediaElement = `<div style="width: 200px; height: 150px; background: var(--callout-bg); border-radius: var(--border-radius); display: flex; align-items: center; justify-content: center; color: var(--text-secondary); flex-shrink: 0;">Video</div>`;
+            }
+        } else {
+            mediaElement = `<div style="width: 200px; height: 150px; background: var(--callout-bg); border-radius: var(--border-radius); flex-shrink: 0;"></div>`;
+        }
 
         postDiv.innerHTML = `
-            <div class="callout-content">
-                <h3>${post.title}</h3>
-                <p class="subtitle">${post.date}</p>
-                <p>${post.excerpt}</p>
-                <p><a href="${post.link}">Read more →</a></p>
+            <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem; align-items: flex-start;">
+                <div style="flex: 1;">
+                    <h3 style="margin-bottom: 0.25rem;">${post.title}</h3>
+                    <p class="subtitle" style="margin-bottom: 0;">${post.date}</p>
+                </div>
+                ${mediaElement}
             </div>
-            <img src="${post.image}" alt="${post.title}" class="callout-image">
+            <div>
+                <p style="margin-bottom: 1rem;">${post.excerpt}</p>
+                <p style="margin-bottom: 0;"><a href="${post.link}">Read more →</a></p>
+            </div>
         `;
 
         container.appendChild(postDiv);

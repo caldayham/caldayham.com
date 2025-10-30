@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Pie Browser Extension Exists (And Why YouTube Promotes It) - Cal Day Ham</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            border-radius: var(--border-radius);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <button id="settings-toggle" class="settings-icon" aria-label="Settings">
+            <img src="../assets/setting-black.svg" alt="Settings" width="20" height="20">
+        </button>
+
+        <div id="settings-popup" class="settings-popup hidden">
+            <h3>Settings</h3>
+            <div class="setting-group">
+                <label>Theme</label>
+                <div class="setting-buttons">
+                    <button class="setting-btn active" data-theme="light">Light</button>
+                    <button class="setting-btn" data-theme="dark">Dark</button>
+                </div>
+            </div>
+            <div class="setting-group">
+                <label>Text Size</label>
+                <div class="setting-buttons">
+                    <button class="setting-btn" data-size="small">Small</button>
+                    <button class="setting-btn active" data-size="medium">Medium</button>
+                    <button class="setting-btn" data-size="large">Large</button>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <h1>Cal Day Ham</h1>
+            <p class="subtitle"><a href="../blog.html">← Back to Blog</a></p>
+        </header>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../blog.html" class="active">Blog</a>
+        </nav>
+
+        <article>
+            <section>
+                <h2>Pie Adblock Scam (And Why YouTube Promotes It)</h2>
+                <p class="subtitle">October 28, 2025</p>
+            </section>
+
+            <section>
+                <p>I keep seeing ads for this app called Pie—some browser extension that supposedly blocks ads and pays
+                    you to watch them. It's being pushed hard on YouTube, even by people affiliated with the platform.
+                    <br/>
+                    <br/>
+                    In the back of your mind, you're obviously thinking: this sounds like either a scam or there's
+                    something non-obvious going on here. Why would YouTube promote a tool that blocks their main revenue
+                    source? And why is this extension allowed when real ad blockers get banned?</p>
+
+            </section>
+
+            <section>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/QG-UfcS7l3k" allowfullscreen
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                    </iframe>
+                </div>
+            </section>
+
+            <section>
+                <h3>Google's Business Model (In 60 Seconds)</h3>
+                <p>Google's business model is stupidly profitable. They buy a bunch of computers, connect them worldwide
+                    with infrastructure, and use those computers to organize data flowing between everyone else's
+                    computers. Then they look at that data and say: "Hey, Company XYZ sells shoes. We know these people
+                    look at shoes online. We'll sell you moments of their attention where you can pitch your shoes."</p>
+
+                <p>An ad placement slot doesn't physically exist. It's just bits on a computer somewhere. The reason
+                    this is such a good business is because there can really only be one giant company controlling all
+                    this infrastructure. If Amazon was only accessible through Bing and all your friends used Bing,
+                    you'd switch to Bing. But nobody's leaving Google, so they can jack prices up to maximize profit.
+                </p>
+
+                <p>The key thing you got to remember: Google only gets one or two ad slots in front of you per video.
+                    They've increased it from one ad to two or maybe three, but they don't get many shots. They want to
+                    put the ad there that's actually going to sell.</p>
+            </section>
+
+            <section>
+                <h3>Why Wasted Ads Are Expensive</h3>
+                <p>If you're a 15-year-old boy and you get an ad for tampons, everyone loses. The tampon company wasted
+                    money. Google wasted money because they wasted a slot they could have sold for more. You wasted
+                    time. It's a waste all around.</p>
+
+                <p>If Google knows you're a 15-year-old boy, they're going to red flag all those tampon ads—anything
+                    you're not going to buy. That's why they ask you "Does this ad seem interesting to you?" It's
+                    actually more profitable in that moment for them to ask for your opinion than it is to show you
+                    another ad. They're not being nice—they're maximizing profit by gathering data.</p>
+            </section>
+
+            <section>
+                <h3>The Honey Comparison</h3>
+                <p>This is the same reason Honey exists. People are like "Why do you save money when you just
+                    download this browser extension?" The reason is it tracks all of your data.</p>
+
+                <p>Instead of getting a little bit of data from a few sites that have opted into Google's ad sharing
+                    program, you're constantly getting tracked on every site you visit. All that data gets added to your
+                    profile. My ads are actually pretty good at this point—I watch ads and think "damn, I kind of want
+                    that." Sometimes I do buy it, because it's genuinely a good product that's relevant to me.</p>
+
+                <p>I'm not saying advertising is bad. You need to be able to tell people about your products. I'm just
+                    trying to illuminate what's actually happening here.</p>
+            </section>
+
+            <section>
+                <h3>So What's Pie Actually Doing?</h3>
+                <p>My thought is that Pie—and I'm like 99.9% sure about this, but drop it in the comments if I'm
+                    wrong—is simply another way for companies like Google to have more data on you. More targeted ads.
+                    More money.</p>
+
+                <p>If Google knows exactly what type of product you're looking for, all the features you care about, and
+                    all your preferences, they can sell that certainty to advertisers. Say you're in the market for a 3D
+                    printer. There's a company selling high-margin 3D printers making $300 profit per unit. If Google
+                    puts the perfect ad in front of you and you click and buy, that company made $100 profit. They could
+                    pay $20 to Google for that customer acquisition—which is steep, but they still made $80.</p>
+
+                <p>The best part for Google? They don't even need to communicate the certainty directly. If they put
+                    that ad in front of you and you buy, they just charge per customer acquired. The advertiser is fine
+                    with paying because they made money. Google is happy because they maximized the value of that ad
+                    slot.</p>
+            </section>
+
+            <section>
+                <h3>Why YouTube Bans Real Ad Blockers But Promotes Pie</h3>
+                <p>Real ad blockers actually block cookies and HTTP traffic from flagged ad sites. They genuinely
+                    prevent Google from serving ads and collecting data. Those get banned because they hurt Google's
+                    business model.</p>
+
+                <p>Pie doesn't hurt Google's business model—it enhances it. You think you're blocking ads and getting
+                    paid, but what you're actually doing is giving Google (and other advertisers) way more data about
+                    your browsing behavior. That data makes their ad targeting more effective, which means they can
+                    charge advertisers more money for those slots.</p>
+
+                <p>The fact that YouTube actively promotes Pie while banning other ad blockers tells you everything you
+                    need to know about whose interests are being served.</p>
+            </section>
+
+            <section>
+                <h3>The Pattern to Notice</h3>
+                <p>Anytime something seems like it's being done for you—like "oh this is great, you should definitely do
+                    this"—there is likely some ulterior motive. Educate yourself more. Constantly try to learn and think
+                    about what is in front of you and why.</p>
+
+                <p>If a service seems too good to be true, ask yourself: what's the incentive structure? Who profits?
+                    What data am I giving up? What am I getting in return?</p>
+
+                <p>In this case, you're getting a few cents to watch ads you might have watched anyway. In exchange,
+                    you're giving comprehensive browsing data that makes you a much more valuable advertising target.
+                    The math works out great—for Google and advertisers. For you? Well, that depends on how much you
+                    value your privacy and browsing data.</p>
+            </section>
+
+            <section>
+                <h3>What To Do About It</h3>
+                <p>I'm not telling you to delete Pie or Honey or whatever browser extensions you use. I'm just
+                    illuminating what's actually happening so you can make an informed decision.</p>
+
+                <p>If you're fine with the tradeoff—sharing comprehensive data in exchange for small payments or
+                    discount codes—that's a legitimate choice. Just make it consciously, knowing what you're trading.
+                </p>
+
+                <p>But don't fool yourself into thinking these companies are doing you a favor out of the goodness of
+                    their hearts. They're doing it because the data you provide is worth more to them than the money
+                    they're paying you. That's how the business model works.</p>
+
+                <p>The pieces add up once you understand the incentive structure. And once you see this pattern, you'll
+                    start noticing it everywhere.</p>
+            </section>
+
+            <section>
+                <p class="subtitle">Tags: Business & Marketing, Systems Thinking & Cognition</p>
+            </section>
+        </article>
+    </main>
+    <script src="../settings.js"></script>
+</body>
+
+</html>

@@ -1,13 +1,44 @@
 {
   "posts": [
     {
+      "title": "Pie Adblock Scam (And Why YouTube Promotes It)",
+      "date": "2025-10-28",
+      "excerpt": "If it seems too good to be true, it probably is. Browser extensions like Pie and Honey don't block ads to help you—they track your data to help advertisers target you better. Here's why YouTube promotes one 'ad blocker' while banning others, and what that tells you about the incentive structure.",
+      "link": "blog/pie-adblock-scam.html",
+      "tags": ["Business & Marketing", "Systems Thinking & Cognition"],
+      "views": 0,
+      "video": "https://www.youtube.com/watch?v=QG-UfcS7l3k",
+      "published": true
+    },
+    {
+      "title": "Dan Koe is Lying to You and so is everybody else.",
+      "date": "2025-10-28",
+      "excerpt": "There are millions of people trying to sell information online because information has no physical volume, but it does have real value and so it makes the perfect product online. But what no one wants to tell you is that the best package of information to sell online is how to sell information online.",
+      "link": "blog/dan-koe-lying.html",
+      "tags": ["Business & Marketing", "Systems Thinking & Cognition"],
+      "views": 0,
+      "video": "https://www.youtube.com/watch?v=l2wPBUhCjVs",
+      "published": true
+    },
+    {
+      "title": "Your Moral Responsibility to Write Reviews",
+      "date": "2025-10-28",
+      "excerpt": "If you don't write a review after purchasing something, the market becomes extremely one-sided. Either only angry customers share their experiences, skewing perception negatively, or only the business controls the narrative, skewing it positively. Taking a few minutes to publicly share your honest experience is how we maintain balanced, trustworthy information for everyone.",
+      "link": "blog/write-reviews.html",
+      "tags": ["Personal Development", "Systems Thinking & Cognition"],
+      "views": 0,
+      "video": "",
+      "published": false
+    },
+    {
       "title": "Lossy Compression Prediction Tradeoff Framework: Intelligence, Wisdom, and Emotional Understanding",
       "date": "2024-09-15",
       "excerpt": "Human intelligence, wisdom, and emotional intelligence operate as different types of lossy compression algorithms optimized for different complexity domains.",
       "link": "blog/lossy-compression.html",
       "tags": ["Systems Thinking & Cognition", "Complexity & Philosophy", "Personal Development"],
       "views": 320,
-      "image": "https://via.placeholder.com/200x150"
+      "video": "",
+      "published": false
     },
     {
       "title": "The Dual Nature of Growth: Stabilization and Expansion Phases",
@@ -16,7 +47,8 @@
       "link": "blog/growth-phases.html",
       "tags": ["Strategy & Growth Philosophy", "Personal Development"],
       "views": 450,
-      "image": "https://via.placeholder.com/200x150"
+      "video": "",
+      "published": false
     }
   ],
   "topics": [
@@ -26,6 +58,7 @@
     "Product Development",
     "Manufacturing & CAD",
     "B2B Sales & Marketing",
+    "Business & Marketing",
     "Research & Lab Equipment",
     "Complexity & Philosophy"
   ]
