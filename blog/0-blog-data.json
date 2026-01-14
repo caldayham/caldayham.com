@@ -18,7 +18,7 @@
       "tags": ["Business & Marketing", "Systems Thinking & Cognition"],
       "views": 0,
       "video": "https://www.youtube.com/watch?v=QG-UfcS7l3k",
-      "published": false
+      "published": true
     },
     {
       "title": "Dan Koe is Lying to You and so is everybody else.",
@@ -28,7 +28,7 @@
       "tags": ["Business & Marketing", "Systems Thinking & Cognition"],
       "views": 0,
       "video": "https://www.youtube.com/watch?v=l2wPBUhCjVs",
-      "published": false
+      "published": true
     },
     {
       "title": "Your Moral Responsibility to Write Reviews",
@@ -48,7 +48,7 @@
       "tags": ["Systems Thinking & Cognition", "Complexity & Philosophy", "Personal Development"],
       "views": 320,
       "video": "",
-      "published": false
+      "published": true
     },
     {
       "title": "The Dual Nature of Growth: Stabilization and Expansion Phases",
@@ -58,7 +58,7 @@
       "tags": ["Strategy & Growth Philosophy", "Personal Development"],
       "views": 450,
       "video": "",
-      "published": false
+      "published": true
     }
   ],
   "topics": [
