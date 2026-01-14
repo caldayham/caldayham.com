@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "title": "What I Learned Working for a Large-Scale National Landscaping Company",
+      "date": "2025-01-13",
+      "excerpt": "Lessons from working at System Pavers — not as theory, but as patterns that repeated across real projects, real homeowners, and real construction constraints. Scope of work, handoffs, financing, communication, and what closing really means.",
+      "link": "blog/system-pavers-lessons.html",
+      "tags": ["B2B Sales & Marketing", "Systems Thinking & Cognition"],
+      "views": 0,
+      "video": "",
+      "published": true
+    },
+    {
       "title": "Pie Adblock Scam (And Why YouTube Promotes It)",
       "date": "2024-12-22",
       "excerpt": "If it seems too good to be true, it probably is. Browser extensions like Pie and Honey don't block ads to help you—they track your data to help advertisers target you better. Here's why YouTube promotes one 'ad blocker' while banning others, and what that tells you about the incentive structure.",
