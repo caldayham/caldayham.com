@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "title": "Persistent Existence, Communication, & Purpose",
+      "date": "2026-04-19",
+      "excerpt": "A conversation with AI that started with 'should I clear this chat?' and drifted into persistence thresholds, hierarchy, limits of language, and purpose.",
+      "link": "blog/persistent-existence.html",
+      "tags": ["Complexity & Philosophy", "Systems Thinking & Cognition", "Personal Development"],
+      "views": 0,
+      "video": "",
+      "published": true
+    },
+    {
       "title": "What I Learned Working for a Large-Scale National Landscaping Company",
       "date": "2025-01-13",
       "excerpt": "Lessons from working at System Pavers — not as theory, but as patterns that repeated across real projects, real homeowners, and real construction constraints. Scope of work, handoffs, financing, communication, and what closing really means.",
@@ -18,7 +28,7 @@
       "tags": ["Business & Marketing", "Systems Thinking & Cognition"],
       "views": 0,
       "video": "https://www.youtube.com/watch?v=QG-UfcS7l3k",
-      "published": true
+      "published": false
     },
     {
       "title": "Dan Koe is Lying to You and so is everybody else.",
@@ -28,7 +38,7 @@
       "tags": ["Business & Marketing", "Systems Thinking & Cognition"],
       "views": 0,
       "video": "https://www.youtube.com/watch?v=l2wPBUhCjVs",
-      "published": true
+      "published": false
     },
     {
       "title": "Your Moral Responsibility to Write Reviews",
@@ -48,7 +58,7 @@
       "tags": ["Systems Thinking & Cognition", "Complexity & Philosophy", "Personal Development"],
       "views": 320,
       "video": "",
-      "published": true
+      "published": false
     },
     {
       "title": "The Dual Nature of Growth: Stabilization and Expansion Phases",
@@ -58,7 +68,7 @@
       "tags": ["Strategy & Growth Philosophy", "Personal Development"],
       "views": 450,
       "video": "",
-      "published": true
+      "published": false
     }
   ],
   "topics": [

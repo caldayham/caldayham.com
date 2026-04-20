@@ -27,22 +27,14 @@ async function loadBlogPosts() {
 
         // Initial display with "recent" filter
         displayPosts('recent');
-        resizeDropdown(filterDropdown);
 
-        // Add event listener for filter dropdown
-        filterDropdown.addEventListener('change', (e) => {
-            displayPosts(e.target.value);
-            resizeDropdown(e.target);
-        });
-
-        // Load topics
-        const topicsContainer = document.getElementById('blog-topics');
-
-        data.topics.forEach(topic => {
-            const topicLi = document.createElement('li');
-            topicLi.innerHTML = `<a href="#">${topic}</a>`;
-            topicsContainer.appendChild(topicLi);
-        });
+        if (filterDropdown) {
+            resizeDropdown(filterDropdown);
+            filterDropdown.addEventListener('change', (e) => {
+                displayPosts(e.target.value);
+                resizeDropdown(e.target);
+            });
+        }
     } catch (error) {
         console.error('Error loading blog posts:', error);
         // Fallback content if JSON fails to load
@@ -83,10 +75,9 @@ function displayPosts(filter) {
         const postDiv = document.createElement('div');
         postDiv.className = 'callout';
 
-        // Generate video thumbnail or fallback
+        // Generate video thumbnail if available
         let mediaElement = '';
         if (post.video && post.video !== '') {
-            // Extract YouTube video ID
             const videoId = post.video.includes('youtube.com') || post.video.includes('youtu.be')
                 ? post.video.split('v=')[1]?.split('&')[0] || post.video.split('/').pop()
                 : null;
@@ -96,20 +87,25 @@ function displayPosts(filter) {
             } else {
                 mediaElement = `<div style="width: 200px; height: 150px; background: var(--callout-bg); border-radius: var(--border-radius); display: flex; align-items: center; justify-content: center; color: var(--text-secondary); flex-shrink: 0;">Video</div>`;
             }
-        } else {
-            mediaElement = `<div style="width: 200px; height: 150px; background: var(--callout-bg); border-radius: var(--border-radius); flex-shrink: 0;"></div>`;
         }
 
+        const headerHTML = mediaElement
+            ? `<div style="display: flex; gap: 1.5rem; margin-bottom: 0.75rem; align-items: flex-start;">
+                   <div style="flex: 1;">
+                       <h3 style="margin-bottom: 0.25rem;">${post.title}</h3>
+                       <p class="subtitle" style="margin-bottom: 0;">${post.date}</p>
+                   </div>
+                   ${mediaElement}
+               </div>`
+            : `<div style="margin-bottom: 0.75rem;">
+                   <h3 style="margin-bottom: 0.25rem;">${post.title}</h3>
+                   <p class="subtitle" style="margin-bottom: 0;">${post.date}</p>
+               </div>`;
+
         postDiv.innerHTML = `
-            <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem; align-items: flex-start;">
-                <div style="flex: 1;">
-                    <h3 style="margin-bottom: 0.25rem;">${post.title}</h3>
-                    <p class="subtitle" style="margin-bottom: 0;">${post.date}</p>
-                </div>
-                ${mediaElement}
-            </div>
+            ${headerHTML}
             <div>
-                <p style="margin-bottom: 1rem;">${post.excerpt}</p>
+                <p style="margin-bottom: 0.75rem;">${post.excerpt}</p>
                 <p style="margin-bottom: 0;"><a href="${post.link}">Read more →</a></p>
             </div>
         `;
