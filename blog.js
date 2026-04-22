@@ -102,10 +102,14 @@ function displayPosts(filter) {
                    <p class="subtitle" style="margin-bottom: 0;">${post.date}</p>
                </div>`;
 
+        const excerptHTML = post.excerpt && post.excerpt.trim() !== ''
+            ? `<p style="margin-bottom: 0.75rem;">${post.excerpt}</p>`
+            : '';
+
         postDiv.innerHTML = `
             ${headerHTML}
             <div>
-                <p style="margin-bottom: 0.75rem;">${post.excerpt}</p>
+                ${excerptHTML}
                 <p style="margin-bottom: 0;"><a href="${post.link}">Read more →</a></p>
             </div>
         `;
