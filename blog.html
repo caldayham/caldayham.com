@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Cal Day Ham</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .supporting-docs {
+            margin-top: auto;
+            padding-top: 3rem;
+            font-size: 0.85em;
+            opacity: 0.7;
+        }
+        .supporting-docs summary {
+            cursor: pointer;
+            font-weight: 600;
+            list-style: none;
+        }
+        .supporting-docs summary::-webkit-details-marker { display: none; }
+        .supporting-docs summary::before {
+            content: "▸ ";
+            display: inline-block;
+            transition: transform 0.15s ease;
+        }
+        .supporting-docs details[open] summary::before {
+            transform: rotate(90deg);
+        }
+        .supporting-docs ul { list-style: none; padding-left: 1rem; margin-top: 0.4rem; }
+        .supporting-docs li { margin-bottom: 0.25rem; }
+    </style>
     <script src="blog.js"></script>
 </head>
 <body>
@@ -58,6 +82,15 @@
             <div id="blog-posts">
                 <!-- Blog posts will be loaded dynamically from blog-data.json -->
             </div>
+        </section>
+
+        <section class="supporting-docs">
+            <details>
+                <summary>Supporting documents</summary>
+                <ul>
+                    <li><a href="blog/workblock-opg-may-3-2026.md">workblock-opg-may-3-2026.md</a></li>
+                </ul>
+            </details>
         </section>
     </main>
     <script src="settings.js"></script>
