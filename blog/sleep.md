@@ -1,3 +1,7 @@
+Cal is building decks and fences, what are you building?
+
+---
+
 If you read the following story and want to tell my your 'token' just shoot me a dm on x, or any other social media platform, I'm private for now but you can just buy the posts you want against an account I'll give you later, Cal
 
 ---
