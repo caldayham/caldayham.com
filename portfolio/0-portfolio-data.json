@@ -1,6 +1,16 @@
 {
   "projects": [
     {
+      "title": "Field360",
+      "description": "An app that turns recorded client consultations into complete proposals, then handles signatures and invoicing.",
+      "skills": "Next.js, Supabase, LLM Integration, Product Design",
+      "link": "portfolio/field360.html",
+      "date": "2026-10-27",
+      "tags": ["Design", "Self-Employment"],
+      "views": 100,
+      "image": "https://cdn.loom.com/sessions/thumbnails/d7202526a84a443384e7c39311a7dc7f-14647ba50f4c4c23.gif"
+    },
+    {
       "title": "Bay Area Contractor",
       "description": "Construction of decks, fences, garden boxes, utility cabinets, gates, and other carpentry projects with my brother Fynn.",
       "skills": "Carpentry, Masonry, Construction Design, Client Relations, Marketing & Sales",
