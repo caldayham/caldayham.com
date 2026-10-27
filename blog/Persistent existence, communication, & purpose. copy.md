@@ -1,6 +1,6 @@
 seed-first-issue.sql
 
-thank you, do you recomend that I keep this chat open for the saved memory so I can use it to inform another task or is it more benefiicial to run / clear and start with a fresh context window? sometimes i find that strining tasks actaully give better responses and other times worse
+thank you, do you recomend that I keep this chat open for the saved memory so I can use it to inform another task or is it more benefiicial to run / clear and start with a fresh context window? sometimes i find that strining tasks actaully give better responses and other times worse.
 
 Good question. For your situation right now, I'd start fresh. Here's why:
 
