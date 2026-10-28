@@ -10,14 +10,61 @@
             position: relative;
             aspect-ratio: 4 / 3;
             width: 100%;
+            background: var(--callout-bg);
+            border: 1px solid var(--callout-border);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        /* Placeholder sits behind the iframe until the Loom player loads */
+        .video-embed::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 28px;
+            height: 28px;
+            margin: -30px 0 0 -14px;
+            border: 3px solid var(--border-color);
+            border-top-color: var(--text-secondary);
+            border-radius: 50%;
+            animation: video-spin 0.9s linear infinite;
+        }
+
+        .video-embed::after {
+            content: "Loading video…";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin-top: 12px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @keyframes video-spin {
+            to { transform: rotate(360deg); }
         }
 
         .video-embed iframe {
             position: absolute;
             inset: 0;
+            z-index: 1;
             width: 100%;
             height: 100%;
             border: 0;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .video-embed iframe.loaded {
+            opacity: 1;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .video-embed::before { animation-duration: 3s; }
+            .video-embed iframe { transition: none; }
         }
     </style>
 </head>
@@ -56,13 +103,14 @@
         </nav>
 
         <!-- To add a demo: copy a <section> block, put the new one at the bottom,
+             keep onload="..." on the iframe (it fades out the loading placeholder),
              and swap the Loom ID (share/<id> becomes embed/<id>). -->
 
         <section>
             <h2>Field360: Client Recordings to Proposals</h2>
             <p>Turns a recorded client consultation into a full proposal, then handles signatures and invoicing.</p>
             <div class="video-embed">
-                <iframe src="https://www.loom.com/embed/d7202526a84a443384e7c39311a7dc7f"
+                <iframe onload="this.classList.add('loaded')" src="https://www.loom.com/embed/d7202526a84a443384e7c39311a7dc7f"
                         title="Field360: client recordings to proposals"
                         allowfullscreen></iframe>
             </div>
@@ -72,7 +120,7 @@
             <h2>OpGraph: Construction Business Management</h2>
             <p>Tracks clients, engagements, shifts, and job costs, with AI receipt sorting that files each expense to the matching job.</p>
             <div class="video-embed">
-                <iframe src="https://www.loom.com/embed/9a4514a50c884d35968e5e0dfe94e19e"
+                <iframe onload="this.classList.add('loaded')" src="https://www.loom.com/embed/9a4514a50c884d35968e5e0dfe94e19e"
                         title="OpGraph: construction business management"
                         allowfullscreen></iframe>
             </div>
